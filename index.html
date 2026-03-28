@@ -1,7 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My VR Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
-  <h1>Hello World!</h1>
-  <p>My first GitHub website.</p>
+
+<header>
+  <h1>My VR Portfolio</h1>
+  <p>Interactive Projects in Virtual Reality</p>
+</header>
+
+<div class="container">
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <a href="social-anxiety.html" class="project-card">
+      <img src="images/social-anxiety.jpg" alt="Social Anxiety Project">
+      <div class="project-content">
+        <div class="project-title">Social Anxiety Training</div>
+        <div class="project-desc">VR exposure therapy for social anxiety using avatar interactions.</div>
+      </div>
+    </a>
+
+    <!-- Project 2 -->
+    <a href="rehabilitation.html" class="project-card">
+      <img src="images/rehab.jpg" alt="Rehabilitation Project">
+      <div class="project-content">
+        <div class="project-title">Rehabilitation & Movement</div>
+        <div class="project-desc">VR-based motor skill training using daily activity simulations.</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 My Portfolio</p>
+</footer>
+
 </body>
 </html>
