@@ -9,25 +9,65 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f5f5f5;
+      line-height: 1.6;
     }
 
     header {
       background: #222;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
+    header h1 { margin: 0 0 10px; }
+
+    section {
+      padding: 60px 20px;
+    }
+
     .container {
-      padding: 40px;
-      max-width: 1200px;
+      max-width: 1100px;
       margin: auto;
     }
 
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    /* Bio */
+    .bio {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Experience */
+    .experience-item {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .experience-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .experience-org {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    /* Projects */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
     .project-card {
@@ -42,24 +82,24 @@
     }
 
     .project-card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
     .project-card img {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
     }
 
     .project-content {
-      padding: 20px;
+      padding: 15px;
     }
 
     .project-title {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .project-desc {
@@ -79,36 +119,74 @@
 <body>
 
 <header>
-  <h1>My VR Portfolio</h1>
-  <p>Interactive Projects in Virtual Reality</p>
+  <h1>Your Name</h1>
+  <p>VR Developer | Researcher | XR Enthusiast</p>
 </header>
 
-<div class="container">
-  <div class="projects">
+<!-- BIO -->
+<section>
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="bio">
+      <p>
+        I am a Virtual Reality developer and researcher focused on building immersive systems for
+        mental health, rehabilitation, and human behavior research. My work combines Unity development,
+        XR interaction design, and psychology-driven frameworks to create meaningful and impactful experiences.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <!-- Project 1 -->
-    <a href="social-anxiety.html" class="project-card">
-      <img src="images/social-anxiety.jpg" alt="Social Anxiety Project">
-      <div class="project-content">
-        <div class="project-title">Social Anxiety Training</div>
-        <div class="project-desc">VR exposure therapy for social anxiety using avatar interactions.</div>
-      </div>
-    </a>
+<!-- EXPERIENCE -->
+<section>
+  <div class="container">
+    <h2>Professional & Research Experience</h2>
 
-    <!-- Project 2 -->
-    <a href="rehabilitation.html" class="project-card">
-      <img src="images/rehab.jpg" alt="Rehabilitation Project">
-      <div class="project-content">
-        <div class="project-title">Rehabilitation & Movement</div>
-        <div class="project-desc">VR-based motor skill training using daily activity simulations.</div>
-      </div>
-    </a>
+    <div class="experience-item">
+      <div class="experience-title">Research Assistant – VR & Psychology</div>
+      <div class="experience-org">University / Lab Name | 202X - Present</div>
+      <p>Worked on VR-based simulations for social anxiety and rehabilitation research. Designed experiments, built environments in Unity, and analyzed behavioral data.</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-title">XR Developer</div>
+      <div class="experience-org">Company / Lab Name | 202X</div>
+      <p>Developed interactive VR applications with a focus on user experience, performance optimization, and real-time interaction systems.</p>
+    </div>
 
   </div>
-</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <a href="social-anxiety.html" class="project-card">
+        <img src="images/social-anxiety.jpg" alt="Social Anxiety Project">
+        <div class="project-content">
+          <div class="project-title">Social Anxiety Training</div>
+          <div class="project-desc">VR exposure therapy simulation using avatar-based social interactions.</div>
+        </div>
+      </a>
+
+      <a href="rehabilitation.html" class="project-card">
+        <img src="images/rehab.jpg" alt="Rehabilitation Project">
+        <div class="project-content">
+          <div class="project-title">Rehabilitation & Movement</div>
+          <div class="project-desc">VR-based rehabilitation system for motor training and ADLs.</div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
 <footer>
-  <p>© 2026 My Portfolio</p>
+  <p>© 2026 Your Name</p>
 </footer>
 
 </body>
